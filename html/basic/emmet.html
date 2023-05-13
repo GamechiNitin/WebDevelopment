@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+    <h1>Emmet</h1>
+
+    // tag{} // This data in the Element
+    <h1>H1 tag</h1>  // h1{data}  
+    <p>This is paragraph</p> // p{data}
+    
+    // * : Multiple the Element
+    <P></P>   // P*2
+    <P></P>
+
+    // ui>li*3
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+    // p>p>p>p : Nested paragraph
+    <p>
+        <p>
+            <p>
+                <p></p>
+            </p>
+        </p>
+    </p>
+
+    //  table>(tr>td*3)*2
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    // article+section+footter : One by one (Sibling)
+    <article></article>
+    <section></section>
+    <footter></footter>
+
+    // p+article*3 : Combine + & *
+    <p></p>
+    <article></article>
+    <article></article>
+    <article></article>
+
+    // a#param : For creating id
+    <a href="" id="param"></a>
+
+    // a.param1 : For creating class
+    <a href="" class="param1"></a>
+</body>
+</html>
