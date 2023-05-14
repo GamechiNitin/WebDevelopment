@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML</title>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h1>Simple Table</h1>
+    <table border=".5">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Mahi</td>
+            <td>40</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Smriti</td>
+            <td>16</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harlean</td>
+            <td>18</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Hitman</td>
+            <td>36</td>
+            <td>Male</td>
+        </tr>
+    </table>
+
+    <!-- Simple Table with RowSpan and ColSpan -->
+    <h1>Simple Table with RowSpan and ColSpan</h1>
+    <table border=".5">
+        <thead>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+           
+        </thead>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+        <tr>
+            <td colspan="4">L</td>
+            
+        </tr>
+    </table>
+
+    <!-- Advanced Table -->
+ <h1>Jobs Vaccancy</h1>
+    <table border="1">
+        <thead>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>India</td>
+                <td>Flutter</td>
+                <td>12 LPA</td>
+                <td rowspan="4">Software Developer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>USA</td>
+                <td>Golang</td>
+                <td>20 LPA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Canada</td>
+                <td>Dart</td>
+                <td>8 LPA</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Singapore</td>
+                <td>HTML</td>
+                <td>6 LPA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Average</td>
+                <td>6 LPA</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    <!-- T4  -->
+  <h1>Time Table</h1>
+    <table border="1">
+        <thead>          
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 AM</td>
+                <td rowspan="2">5:00 PM</td>
+                <td>Introduction to Flutter</td>
+            </tr>
+            <tr>
+                <td>API Integration</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 AM</td>
+                <td>11:00 AM</td>
+                <td rowspan="2">Flutter State Management</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>2:00 PM</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>2:00 PM</td>
+                <td rowspan="1">Riverpod</td>
+            </tr>
+            
+            <tr>
+
+                <td>Wednesday</td>
+                <td>11:00 AM</td>
+                <td>2:00 PM</td>
+                <td>Bloc</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
