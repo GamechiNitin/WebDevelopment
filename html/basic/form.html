@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <h1>Form in HTML</h1>
+
+    
+    <h1>Log In Form</h1>
+    <form action="">
+        <label for="email">Enter Email ID : </label>
+        <input type="text",id="email" placeholder="Enter email">
+        
+        <br/>
+        <br/>
+        
+        <label for="password">Enter Password : </label>
+        <input type="password",id="password" placeholder="Enter password">
+        
+        <br/>
+        <br/>
+        <input type="submit",value="Submit">
+    </form>
+
+    <h1>Sign Up Form</h1>
+    <form action="">
+
+        <fieldset>
+            <legend>Sign Up Form Legend</legend>
+        <label for="name" >Name : </label>
+        <input type="text" id="name" placeholder="Enter name">
+  
+        <label for="password">Enter Password : </label>
+        <input type="password",id="password" placeholder="Enter password">
+        <br/>
+        <br/> 
+
+        <label for="dob">DOB : </label>
+        <input type="date" name="date" id="dob">
+      
+        <label for="gender">Gender : </label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <br/>
+        <br/>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Language</legend>
+            <input type="checkbox" name="langauage" id="english" value="English">
+            <label for="english">English</label>
+            <input type="checkbox" name="langauage" id="germany" value="Germany">
+            <label for="germany">Germany</label>
+            <input type="checkbox" name="langauage" id="tamil" value="Tamil">
+            <label for="tamil">Tamil</label>
+            <input type="checkbox" name="langauage" id="hindi" value="Hindi">
+            <label for="hindi">Hindi</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Upload File</legend>
+            <input type="file">
+        </fieldset>
+               
+        <br/>
+        <br/>
+        
+        <label for="bio">BIO : </label>
+        <textarea name="textarea" id="bio" cols="25" rows="5" placeholder="Enter bio here..."></textarea>
+        <br/>
+        <br/>
+        <button>Submit</button>
+    </fieldset>
+    </form>
+</body>
+</html>
