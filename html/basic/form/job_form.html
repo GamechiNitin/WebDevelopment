@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+
+    <form action="">
+
+        <label for="name">Name : </label>
+        <br/>
+        <input type="text" id="name" placeholder="Enter name">
+
+        <br/>
+        <br/>
+
+        <label for="email">Email : </label>
+        <br/>
+        <input type="email" id="email" placeholder="Enter email">
+       
+        <br/>
+        <br/>
+
+        <label for="phone">Phone : </label>
+        <br/>
+        <input type="tel" id="phone" placeholder="Enter phone number">
+        
+        <br/>
+        <br/>
+       
+        
+        <label for="gender">Gender : </label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        
+        
+        <br/>
+        <br/>
+
+        <label for="dob">Date of Birth : </label>
+        <input type="date" id="dob">
+        
+        <br/>
+        <br/>
+        
+        <label for="experience">Experience (in years) : </label>
+        <input type="number" name="counter" id="experience" max="6" min="1" value="2">
+        <br/>
+        <br/>
+ 
+        <label for="file1">Resume : </label>
+        <input type="file" id="file1">
+        <br/>
+        <br/>
+        
+        <label for="education">Education : </label>
+        <select name="education" id="education">
+            <option value="secondary">Higher Secondary</option>
+            <option value="primary">Primary School</option>
+            <option value="be">BE</option>
+            <option value="btech">B.tech</option>
+            <option value="mba">MBA</option>
+            <option value="phd">PHD</option>
+        </select>
+        
+        <br/>
+        <br/>
+
+
+        <fieldset>
+            <legend>Skills : </legend>
+            <input type="checkbox",value="html" name="html" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox",value="css" name="css" id="css">
+            <label for="css">Css</label>
+            <input type="checkbox",value="javascript" name="javascript" id="javascript">
+            <label for="javascript">Javascript</label>
+            <input type="checkbox",value="node" name="node" id="node">
+            <label for="node">Node</label>
+        </fieldset>       
+        <br/>     
+
+        <fieldset>
+            <legend>Availability : </legend>
+            <input type="radio" id="r1" value="r1" name="availability">
+            <label for="r1">Full-Time</label>
+            <input type="radio" id="r2" value="r2" name="availability">
+            <label for="r2">Part-Time</label>
+        </fieldset>
+
+        <br/> 
+        <label for="additionalComment">Additional Comments : </label>
+        <br/> 
+        <textarea name="additionalComment" id="additionalComment" cols="40" rows="4"></textarea>
+        <button>Submit Application</button>
+    </form>
+</body>
+</html>
