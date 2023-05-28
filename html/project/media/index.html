@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+
+</head>
+<body>
+    <header id="#home">
+        <h1>Welcome to Web Development with HTML</h1>
+
+        <h2>Media Tag || Audio Tag || Image Tag</h2>
+    </header>
+
+    <table>
+        <tr>
+            <td>
+                <img src="image.jpg" alt="image" height="80" loading="lazy">
+
+            </td>
+            <td>
+                <Ul>
+                    <li>
+                        <a href="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#playlist">Video</a>
+                    </li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Footer</a>
+                    </li>
+                </Ul>
+            </td>
+        </tr>
+    </table>
+    
+<main>
+    
+    <section>
+
+        <!-- 1 way -->
+        <h3>Audio File</h3>
+        <audio src="audio.mp3" controls> First</audio>
+        
+        <!-- 2 way -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+    </section>
+    
+    <section>
+
+        <h3>Video File</h3>
+        
+        <video src="video.mp4" controls height="200px"></video>
+        <video  controls height="200px">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="resume">        
+        <h3>Iframe File</h3>
+        
+        <iframe src="../resume/resume.html" height="250" width="720"></iframe>
+        
+        <h3>Iframe Embed File</h3>
+        <iframe src="https://www.youtube.com/embed/S4wKoTXyl3k?autoplay=1&mute=1" ></iframe>
+    </section>
+
+    <section id="playlist">
+        <h2>Video Playlist</h2>
+        <table>
+            <tr>
+                <td>
+                    <iframe src="https://www.youtube.com/embed/S4wKoTXyl3k" ></iframe>
+
+                </td>
+                <td>
+                    <iframe src="https://www.youtube.com/embed/S4wKoTXyl3k" ></iframe>
+
+                </td>
+                <td>
+                    <iframe src="https://www.youtube.com/embed/S4wKoTXyl3k" ></iframe>
+
+                </td>
+            </tr>
+            <tr>
+                <td>    <iframe src="https://www.youtube.com/embed/S4wKoTXyl3k" ></iframe>
+                </td>
+                <td>    <iframe src="https://www.youtube.com/embed/S4wKoTXyl3k" ></iframe>
+                </td>
+                <td>    <iframe src="https://www.youtube.com/embed/S4wKoTXyl3k" ></iframe>
+                </td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+    <footer id="footer">
+        <p>&copy; 2023 Nitin Gamechi, All rights reserved.</p>
+    </footer>
+</body>
+</html>
